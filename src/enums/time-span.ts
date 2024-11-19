@@ -1,0 +1,5 @@
+export enum TimeSpan {
+  TODAY = 'TODAY',
+  CURRENT_WEEK = 'CURRENT_WEEK',
+  CURRENT_MONTH = 'CURRENT_MONTH',
+}

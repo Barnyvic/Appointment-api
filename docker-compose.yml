@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  api:
+    build: .
+    image: apptwise-api
+    container_name: apptwise-api
+    command: yarn run start:prod
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:5000:5000"
+    env_file:
+      - ./.env
+#     networks:
+#       - apptwise-net
+
+# networks:
+#   apptwise-net:
+#     driver: bridge
